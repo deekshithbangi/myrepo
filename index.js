@@ -40,16 +40,16 @@ app.post("/sign_up",(req,res)=>{
         console.log("Record Inserted Successfully");
     });
 
-    return res.redirect('signup_success.html')
+    return res.redirect('homepage.html')
 
 })
 
 
-app.get("/",(req,res)=>{
+app.get("/homepage",(req,res)=>{
     res.set({
         "Allow-access-Allow-Origin": '*'
     })
-    return res.redirect('index.html');
+    return res.redirect('homepage.html');
 }).listen(3000);
 
 
